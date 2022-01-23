@@ -15,9 +15,9 @@ export default {
     },
     renderer(token) {
         const type = token.link2[0]
-        let name = token.link2.substring(1) ?? ''
+        let name = token.link2.substring(1)
 
-        let url = name.toLowerCase().replaceAll(' ', '-')
+        let url = name//.toLowerCase().replaceAll(' ', '-')
 
         if (name.startsWith('-')) {
             name = name?.substring(1).split(' ')[0]

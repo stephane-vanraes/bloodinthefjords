@@ -1,0 +1,69 @@
+:root {
+	--orange: rgb(250, 176, 91);
+	--orange2: rgb(231, 78, 46);
+}
+
+@font-face {
+	font-family: 'Gravedigger';
+	src: url('/fonts/Gravedigger.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('/fonts/Inter.ttf') format('truetype');
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	color: inherit;
+	font: inherit;
+	line-height: 1.25;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+*:is(:active, :focus, :hover) {
+	outline: none;
+}
+body {
+	background: radial-gradient(150% 100% at 80% 40%, var(--orange2), var(--orange));
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Inter';
+	min-height: 100vh;
+	overflow: hidden auto;
+}
+
+body::-webkit-scrollbar {
+	background-color: black;
+	width: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: white;
+	width: 0.35rem;
+}
+
+em {
+	font-weight: 600;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	color: var(--orange2);
+	text-decoration: underline;
+	text-decoration-color: var(--orange2);
+}
+
+a:is(:active, :focus, :hover) {
+	background-color: var(--orange2);
+	color: white;
+}

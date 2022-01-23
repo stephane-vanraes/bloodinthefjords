@@ -1,0 +1,33 @@
+{
+  "name": "hunter",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview",
+    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-svelte3": "^3.2.1",
+    "graphql": "^16.2.0",
+    "graphql-request": "^3.7.0",
+    "marked": "^4.0.10",
+    "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.4.0",
+    "remark": "^14.0.2",
+    "remark-html": "^15.0.1",
+    "remark-parse": "^10.0.1",
+    "svelte": "^3.44.0",
+    "unified": "^10.1.1"
+  },
+  "type": "module",
+  "dependencies": {
+    "@sveltejs/adapter-netlify": "^1.0.0-next.42"
+  }
+}

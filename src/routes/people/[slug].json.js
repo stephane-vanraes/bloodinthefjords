@@ -6,7 +6,19 @@ export async function get({ params }) {
     const { people } = await query(`
         people(where: { slug: "${params.slug}" }) {
             description
-            image { url }
+            image { 
+                url(
+                    transformation: {
+                        image: {
+                            resize: {
+                                fit: clip
+                                height: 300
+                                width: 300
+                            }
+                        }
+                    }
+                )
+            }
             name
             personState: person_state
             race

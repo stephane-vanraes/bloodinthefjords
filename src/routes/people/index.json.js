@@ -6,7 +6,19 @@ export async function get() {
 
     const { people } = await query(`
         people {
-          image { url }
+            image { 
+                url(
+                    transformation: {
+                        image: {
+                            resize: {
+                                fit: clip
+                                height: 300
+                                width: 300
+                            }
+                        }
+                    }
+                )
+            }
           description
           name
           personState: person_state

@@ -37,10 +37,12 @@
 	}
 
 	.person > div {
+		align-items: center;
 		display: flex;
 		flex: 1 0 10rem;
 		flex-direction: column;
 		gap: 1rem;
+		max-width: max-content;
 	}
 
 	.person > div > p:last-child {

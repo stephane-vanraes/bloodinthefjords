@@ -4,11 +4,13 @@
 }
 
 @font-face {
+	font-display: swap;
 	font-family: 'Gravedigger';
 	src: url('/fonts/Gravedigger.ttf') format('truetype');
 }
 
 @font-face {
+	font-display: swap;
 	font-family: 'Inter';
 	src: url('/fonts/Inter.ttf') format('truetype');
 }

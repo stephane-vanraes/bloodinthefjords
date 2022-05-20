@@ -1,14 +1,3 @@
-<script context="module">
-	export async function load({ fetch }) {
-		const orgs = await fetch('./orgs.json').then((res) => res.json());
-		return {
-			props: {
-				orgs
-			}
-		};
-	}
-</script>
-
 <script>
 	export let orgs = [];
 </script>

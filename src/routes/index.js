@@ -1,6 +1,5 @@
 import { query } from "$lib/db"
 export async function get() {
-
     const { interests } = await query(`
         interests {
             people {

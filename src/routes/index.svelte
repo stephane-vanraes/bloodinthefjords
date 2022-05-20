@@ -1,13 +1,3 @@
-<script context="module">
-	export async function load({ fetch }) {
-		const interests = await fetch('/interest.json').then((res) => res.json());
-
-		return {
-			props: interests
-		};
-	}
-</script>
-
 <script>
 	import PersonSmall from '$lib/organisms/PersonSmall.svelte';
 

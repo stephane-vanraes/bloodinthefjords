@@ -1,13 +1,3 @@
-<script context="module">
-	export async function load({ fetch, params }) {
-		const person = await fetch(`/people/${params.slug}.json`).then((res) => res.json());
-
-		return {
-			props: person
-		};
-	}
-</script>
-
 <script>
 	import Avatar from '$lib/components/Avatar.svelte';
 

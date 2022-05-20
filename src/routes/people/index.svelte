@@ -1,14 +1,3 @@
-<script context="module">
-	export async function load({ fetch }) {
-		const people = await fetch('./people.json').then((res) => res.json());
-		return {
-			props: {
-				people
-			}
-		};
-	}
-</script>
-
 <script>
 	import TextInput from '$lib/components/TextInput.svelte';
 	import EmptyState from '$lib/organisms/EmptyState.svelte';

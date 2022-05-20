@@ -10,6 +10,8 @@ export async function get() {
 
     
     return {
-        body: companies.sort((a,b) => a.name.localeCompare(b.name))
+        body: {
+            orgs: companies.sort((a,b) => a.name.localeCompare(b.name))
+        }
     }
 }

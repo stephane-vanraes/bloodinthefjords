@@ -2,7 +2,7 @@ import { query } from "$lib/db"
 import linkifier from "$lib/marked/linkifier"
 import { marked } from "marked"
 
-export async function get({ params }) {
+export async function get({ params }) {    
     const { people } = await query(`
         people(where: { slug: "${params.slug}" }) {
             description

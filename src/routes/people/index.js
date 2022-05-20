@@ -3,7 +3,6 @@ import linkifier from "$lib/marked/linkifier"
 import { marked } from "marked"
 
 export async function get() {
-
     const { people } = await query(`
         people {
             image { 
@@ -32,6 +31,8 @@ export async function get() {
     people.forEach(person => person.description = marked.parse(person.description))
     
     return {
-        body: people.sort((a, b) => a.name.localeCompare(b.name))
+        body: {
+            people: people.sort((a, b) => a.name.localeCompare(b.name))
+        }
     }
 }

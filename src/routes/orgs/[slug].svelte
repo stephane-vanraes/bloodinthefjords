@@ -1,13 +1,3 @@
-<script context="module">
-	export async function load({ fetch, params }) {
-		const org = await fetch(`/orgs/${params.slug}.json`).then((res) => res.json());
-
-		return {
-			props: org
-		};
-	}
-</script>
-
 <script>
 	import Avatar from '$lib/components/Avatar.svelte';
 
@@ -18,7 +8,6 @@
 
 	const all = [owner, [leader], employees];
 
-	$: console.log(all);
 	const titles = ['Owner', 'Leader', 'Employee'];
 </script>
 
